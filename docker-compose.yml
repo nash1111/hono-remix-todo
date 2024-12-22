@@ -1,0 +1,14 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: todo-mysql
+    restart: unless-stopped
+    # TODO: change to use secrets
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: todo_db
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: apppass
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password

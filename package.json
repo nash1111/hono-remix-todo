@@ -6,6 +6,18 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "@prisma/client": "^6.1.0",
+    "@types/node": "^22.10.2",
+    "hono": "^4.6.14",
+    "prisma": "^6.1.0",
+    "remix": "^2.15.2",
+    "tsx": "^4.19.2"
+  },
+  "scripts": {
+    "dev-be": "bun x tsx watch server/index.ts"
   }
 }
