@@ -1,6 +1,9 @@
 memo.md
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
+# for remix
+build/
+
 # Logs
 
 logs

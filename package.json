@@ -4,7 +4,7 @@
   "module": "index.ts",
   "scripts": {
     "dev-be": "bun x tsx watch server/index.ts",
-    "dev-fe": "cd src && remix dev"
+    "dev-fe": "remix dev"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
